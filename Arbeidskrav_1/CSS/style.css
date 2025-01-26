@@ -14,17 +14,21 @@ body,header,article{
 body{
     background-color: var(--gray);
 }
-article{
+
+header, article{
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--white); 
+    
 }
+article{ 
+    flex-direction: column;
+    background-color: var(--white);
+    justify-content: center;
+} 
 nav ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: .5rem;
     margin: 0;
     width: 100%;
