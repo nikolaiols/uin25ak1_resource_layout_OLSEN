@@ -8,18 +8,33 @@
     --gray: #E1E5EE;
     --white: #fff;
 }
+body,header,article{
+    box-sizing: border-box;
+}
 body{
     background-color: var(--gray);
 }
-nav{
+nav, article{
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    background-color: var(--white); 
 }
 button{
+        display: inline-block;
         font-weight: 600;
         font-size: 1rem;
         background: var(--darkblue);
         color: var(--white);
         padding: .5rem 1rem;
         border: none;
+        border-bottom: 4px solid var(--white);
+       
+}
+button:hover {
+    background: var(--white);
+    color: var(--darkblue);
+    border-bottom: 4px solid var(--white);
 }
