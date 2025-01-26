@@ -22,7 +22,7 @@ article{
     flex-direction: column;
     background-color: var(--white); 
 }
-ul{
+nav ul{
     display: flex;
     justify-content: center;
     gap: .5rem;
