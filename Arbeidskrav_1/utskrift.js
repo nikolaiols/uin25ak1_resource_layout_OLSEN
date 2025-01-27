@@ -1,15 +1,30 @@
 
+
 let HTMLinfo = ""
-resources.map((resource, index) => HTMLinfo =
+
+
+let resultat = resources.filter((res) => res.category == "HTML")
+
+resultat.map(resource => {HTMLinfo +=
     ` 
-    <h1>${resources[0].category}</h1>
-    <p>${resources[0].text}</p>
+    <h1>${resource.category}</h1>
+    <p>${resource.text}</p>
         <ul>
-            <li><a href="${resources[0].sources[0].url}">${resources[0].sources[0].title}</a></li>
-            <li><a href="${resources[1].sources[1].url}">${resources[1].sources[1].title}</a></li>
-            <li><a href="${resources[2].sources[2].url}">${resources[2].sources[2].title}</a></li>
+            <li><a href="${resource.sources.url}">${resource.sources.title}</a></li>
+            <li><a href="${resource.sources.url}">${resource.sources.title}</a></li>
+            <li><a href="${resource.sources.url}">${resource.sources.title}</a></li>
         </ul>
     `
-)
+})
 document.getElementById("print-info").innerHTML = HTMLinfo
 
+/*document.getElementById("bhtml").addEventListener("click", function(){
+    const filter = resources.filter(checkresources)
+    function checkresources(resource) {
+        return resource === document.getElementById("bhtml").value
+      }
+})
+*/
+
+
+//
