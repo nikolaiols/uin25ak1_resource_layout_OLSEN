@@ -18,13 +18,3 @@ resultat.map(resource => {HTMLinfo +=
 document.getElementById("print-info").innerHTML = HTMLinfo
 
 console.log(resultat)
-/*document.getElementById("bhtml").addEventListener("click", function(){
-    const filter = resources.filter(checkresources)
-    function checkresources(resource) {
-        return resource === document.getElementById("bhtml").value
-      }
-})
-*/
-
-
-//
