@@ -1,9 +1,8 @@
 
 
 let HTMLinfo = ""
-let BtnName = "HTML" //starter på html siden men kan endres
+let BtnName = "" //starter på html siden men kan endres
 
-const html = document.getElementById("bhtml")
 
 //finn ut hvordan du kan bytte ut "html" med hva som blir trykket på!!! og fiks css så det ser likt ut som på skissen
 function Update(CategoryName){
@@ -21,5 +20,5 @@ resultat.map(resource => {HTMLinfo =
 }) /*må bruke .map for å skrive ut linkene fordi de er lagt inni en array */
 document.getElementById("print-info").innerHTML = HTMLinfo}
 
-
+Update('HTML')
 
