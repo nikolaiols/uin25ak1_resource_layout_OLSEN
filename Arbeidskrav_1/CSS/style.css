@@ -1,63 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    font-family: "Montserrat" , sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
 }
-:root{
-    --darkblue: #2A324B;
-    --blue: #58699D;
-    --gray: #E1E5EE;
-    --white: #fff;
+:root {
+  --darkblue: #2a324b;
+  --blue: #58699d;
+  --gray: #e1e5ee;
+  --white: #fff;
 }
-body,header,article{
-    box-sizing: border-box;
+body,
+header,
+article {
+  box-sizing: border-box;
 }
-body{
-    background-color: var(--gray);
-}
-
-header, article{
-    margin: 0 auto;
-    max-width: 1000px;
-    display: flex;
-    
-}
-article{ 
-    flex-direction: column;
-    background-color: var(--white);
-    justify-content: center;
-    padding: 3rem;
-} 
-nav{
-    width: 100%;
-}
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    gap: .5rem;
-    margin: 0;
-    width: 100%;
-    padding: 0;
-}
-li{
-    list-style: none;
-    a{
-        color: #58699D;
-    }
+body {
+  background-color: var(--gray);
 }
 
-button{
-        display: inline-block;
-        font-weight: 600;
-        font-size: 1rem;
-        background: var(--darkblue);
-        color: var(--white);
-        padding: 1.5rem 3.2rem;
-        border: none;
-        border-bottom: 4px solid var(--darkblue);
-       
+header,
+article {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+}
+article {
+  flex-direction: column;
+  background-color: var(--white);
+  justify-content: center;
+  padding: 3rem;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+li {
+  list-style: none;
+  a {
+    color: #58699d;
+  }
+}
+
+button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  background: var(--darkblue);
+  color: var(--white);
+  padding: 1.5rem 3.2rem;
+  border: none;
+  border-bottom: 4px solid var(--darkblue);
 }
 button:hover {
-    background: var(--white);
-    color: var(--darkblue);
-    border-bottom: 4px solid var(--white);
+  background: var(--white);
+  color: var(--darkblue);
+  border-bottom: 4px solid var(--white);
 }
